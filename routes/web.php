@@ -28,3 +28,8 @@ Route::any('{/login}', function ($id) {
 
  });
 });
+
+
+Route::get('/home', 'HomeController@index')->name('home');
+
+Route::get('/productos', 'ProductController@index');
