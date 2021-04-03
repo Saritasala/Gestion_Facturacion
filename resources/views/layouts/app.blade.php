@@ -56,7 +56,7 @@
                             <span>Mi perfil</span>
                         </a>
 
-                      
+
                         <a href="{{ route('home') }}" class="dropdown-item">
                             <i class="fas fa-users"></i>
                             <span>Usuarios</span>
@@ -101,7 +101,7 @@
                             <i class="color-session fas fa-chart-line text-info"></i> Productos
                         </a>
                     </li>
-                   
+
                     <li class="nav-item">
                         <a class="nav-link" href="{{ route('home') }}">
                             <i class="color-session fas fa-store text-info"></i> Ordenes
@@ -113,7 +113,7 @@
                             <i class="color-session fas fa-store text-info"></i> Listado de usuarios
                         </a>
                     </li>
-                   
+
                     <li class="nav-item">
                         <a class="nav-link" href="{{ route('home') }}">
                             <i class="color-session fas fa-shopping-cart text-info"></i> Listado de ordenes
@@ -140,7 +140,7 @@
                             <div class="media align-items-center">
                                 <div class="media-body ml-2 d-none d-lg-block">
                                     <span class="mb-0 text-sm  font-weight-bold">
-                                     
+
                                     </span>
                                 </div>
                             </div>
@@ -153,20 +153,20 @@
                             </a>
 
 
-                            
-                            
+
+
                             <a href="{{ route('home') }}" class="dropdown-item">
                                 <i class="fas fa-users"></i>
                                 <span>Usuarios</span>
                             </a>
-                            
 
-                           
+
+
                             <a href="{{ route('home') }}" class="dropdown-item">
                                 <i class="fas fa-lock"></i>
                                 <span>Permisos</span>
                             </a>
-                           
+
                             <div class="dropdown-divider"></div>
                             <a href="/" class="dropdown-item" onclick="event.preventDefault();
                   document.getElementById('').submit();">
@@ -201,7 +201,7 @@
 
     <!-- Argon JS -->
     <script src="{{ asset('argon') }}/js/argon.js?v=1.0.0"></script>
-    <script src="{{ asset('js/app.js') }}"></script>
+    <script src="{{ asset('/js/app.js') }}"></script>
     <script src="{{ asset('js') }}/payU.js"></script>
     <script
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA01EIKVqGmy9BAhcDyT-nsJsLtBUbU_gA&libraries=places&callback=initMap">
@@ -210,7 +210,7 @@
 <footer class=" ml-8  pt-4">
 
     <!-- Copyright -->
-   
+
     <!-- Copyright -->
 
 </footer>
