@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<meta charset="utf-8">
-		<title>login</title>
+		<title>Gestion | Facturacion</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 		<!-- STYLE CSS -->
@@ -16,14 +16,15 @@
 				<div class="image-holder">
 					<img src="img/registro.jpg" alt="">
 				</div>
-				<form action="">
+				<form role="form" action="{{route('login')}}" method="POST" autocomplete="off">
+					@csrf
 					<h3>Iniciar sesion</h3>
 
 					<div class="form-holder">
-						<input type="text" placeholder="e-mail" class="form-control">
+						<input type="text" name="email" placeholder="e-mail" class="form-control">
 					</div>
 					<div class="form-holder">
-						<input type="password" placeholder="Password" class="form-control" style="font-size: 15px;">
+						<input type="password" name="password" placeholder="Password" class="form-control" style="font-size: 15px;">
 					</div>
 					<div class="checkbox">
 						<label>
@@ -31,10 +32,16 @@
 							<span class="checkmark"></span>
 						</label>
 					</div>
+					
 					<div class="form-login">
 						<button>Sign up</button>
-						<p>Crear una cuenta? <a href="{{ url('registro') }}">Registrarte</a></p>
+						<!--
+						<p>Crear una cuenta? <a href="">Registrarte</a></p>
+						-->
+						<br>
 					</div>
+					<br>
+				
 				</form>
 			</div>
 		</div>

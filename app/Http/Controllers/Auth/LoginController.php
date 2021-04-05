@@ -54,7 +54,7 @@ class LoginController extends Controller
        ->exists();
        if ($userData) {
           if (Auth::attempt(['email' => $request->email, 'password' => $request->password, 'state' => 1])) {
-             return redirect()->route('administrator.home');
+             return redirect()->route('home');
           } else {
              return back()->with('failed', 'Usuario o contraseña incorrectos. Si el problema persiste contacte al adminstrador.');
           }

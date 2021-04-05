@@ -18,8 +18,6 @@ class CreateRolesTable extends Migration
             $table->string('name', 100);
             $table->integer('unique')->default(2);
             $table->integer('state')->default(1);
-            $table->softDeletes();
-            $table->timestamps();
         });
     }
 
