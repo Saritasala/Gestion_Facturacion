@@ -50,7 +50,7 @@ class LoginController extends Controller
  
        $userData = User::where('email', $request->email)
        ->where('state', 1)
-       ->whereIn('rol_id', [1, 2])
+       ->whereIn('role_id', [1, 2])
        ->exists();
        if ($userData) {
           if (Auth::attempt(['email' => $request->email, 'password' => $request->password, 'state' => 1])) {
@@ -61,5 +61,10 @@ class LoginController extends Controller
        }else{
           return back()->with('failed', 'Usuario o contraseña incorrectos. Si el problema persiste contacte al adminstrador.');
        }
+    }
+
+
+    public function showLogin(){
+       return view('login');
     }
 }

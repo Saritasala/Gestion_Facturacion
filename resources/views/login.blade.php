@@ -16,7 +16,7 @@
 				<div class="image-holder">
 					<img src="img/registro.jpg" alt="">
 				</div>
-				<form role="form" action="{{route('login')}}" method="POST" autocomplete="off">
+				<form role="form" action="{{route('login.login')}}" method="POST" autocomplete="off">
 					@csrf
 					<h3>Iniciar sesion</h3>
 

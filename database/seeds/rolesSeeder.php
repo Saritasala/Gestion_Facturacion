@@ -11,15 +11,20 @@ class rolesSeeder extends Seeder
      */
     public function run()
     {
-        roles::create([
+       
+        DB::table('roles')->insert([
             'name' => 'Administrador',
             'unique' => 1,
-            'state'=> 1
+            'state'=> 1,
+            'created_at' => now(),
+            'updated_at' => now()
         ]);
-        roles::create([
+        DB::table('roles')->insert([
             'name' => 'Empleado',
             'unique' => 2, 
-            'state'=> 1
+            'state'=> 1,
+            'created_at' => now(),
+            'updated_at' => now()
         ]);
        
     }

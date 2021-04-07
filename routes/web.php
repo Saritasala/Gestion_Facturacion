@@ -14,9 +14,6 @@ use Illuminate\Support\Facades\Route;
 */
 
 
-Route::get('/', function () {
-    return view('login');
-});
 
 Route::get('registro', function () {
     return view('registro');
@@ -29,6 +26,9 @@ Route::any('{/login}', function ($id) {
  });
 });
 
+Route::get('/', 'Auth\LoginController@showLogin');
+
+Route::post('/login', 'Auth\LoginController@login')->name('login.login');
 
 Route::get('/home', 'HomeController@index')->name('home');
 
