@@ -24,7 +24,7 @@
                 <a href="{{ route('home') }}"><span class="fa fa-home mr-3"></span> Inicio</a>
             </li>
             <ul class="acorh">
-             <li><a href="{{ route('index') }}"><span class="fa fa-shopping-cart mr-3"></span> Productos</a>
+             <li><a href="{{ route('index.product') }}"><span class="fa fa-shopping-cart mr-3"></span> Productos</a>
              <ul>
                  <li><a href="{{ route('create.product') }}">Crear Producto</a></li>
              </ul>

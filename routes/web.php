@@ -31,5 +31,12 @@ Route::get('/', 'Auth\LoginController@showLogin');
 Route::post('/login', 'Auth\LoginController@login')->name('login.login');
 
 Route::get('/home', 'HomeController@index')->name('home');
+//Productos
+Route::get('/productos', 'ProductController@index')->name('index.product');
+Route::get('/productos/create', 'ProductController@store')->name('create.product');
+Route::get('/productos/edit', 'ProductController@edit')->name('edit.product');
 
-Route::get('/productos', 'ProductController@index');
+//Ordenes
+Route::get('/ordenes', 'OrderController@index')->name('order.index');
+Route::get('/ordenes/create', 'OrderController@store')->name('create.order');
+Route::get('/ordenes/edit', 'OrderController@edit')->name('edit.order');

@@ -18,6 +18,7 @@
 				</div>
 				<form role="form" action="{{route('login.login')}}" method="POST" autocomplete="off">
 					@csrf
+					
 					<h3>Iniciar sesion</h3>
 
 					<div class="form-holder">
